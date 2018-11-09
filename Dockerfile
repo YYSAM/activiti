@@ -1,3 +1,3 @@
-FROM yysam/docker-alpine-java-bash:latest
+FROM tomcat:8.5-jre8-alpine
 MAINTAINER WangBin
-export dataSource_url=$activiti_dataSource_url 
+COPY activiti.sh /usr/local/tomcat/bin
